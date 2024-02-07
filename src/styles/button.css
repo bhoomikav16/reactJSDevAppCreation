@@ -1,0 +1,56 @@
+.button{
+    background-color:  #234d6f;
+    padding: 4%;
+    margin-left: 25%;
+    width: 63%;
+    height: 7%;
+    margin-top: 10%;
+    color: white;
+    border-radius: 500px;
+    border: 20px;
+    cursor: pointer;
+    
+}
+
+.image{
+    width: 70%;
+    /* justify-content: flex-start; */
+    /* float: inline-start; */
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+
+.inputFields{
+    background-color: aliceblue;
+    margin-bottom: 8%;
+    padding: 5%;
+    margin-left: 25%;
+    border-color: white;
+    border: 20px;
+}
+
+.forgotPwd{
+    background: none;
+    border: none;
+    border-color: none;
+    margin-left: 25% ;
+    padding: 0;
+    width: 70%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.signUpBtn{
+    border: none;
+    background: none;
+    border-color: none;
+    margin-top: 1%;
+    cursor: pointer;
+
+}
+
+.headerSignIn{
+    margin-left: 40%;
+}
