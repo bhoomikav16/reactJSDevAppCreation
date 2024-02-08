@@ -1,16 +1,12 @@
 import React, { Children, useState } from 'react'
 import  '../styles/button.css'
+import ForgotPassword from './ForgotPassword';
 
-export default function Submitbtn({children, className, handleClick}){
+export default function Submitbtn({children, className,onClick}){
     
-    const[forgotPassword, setForgotPassword]=useState(false);
-    console.log('chekc2')
 
-    function setValue(){
-        setForgotPassword(true)
-    }
     
     return(
-              <button  onClick={handleClick} id='lgnbutton' className={className} >{children}</button>
+              <button  onClick={onClick} id='lgnbutton' className={className} >{children}</button>
     );
 }

@@ -2,11 +2,11 @@
     background-color:  #234d6f;
     padding: 4%;
     margin-left: 25%;
-    width: 63%;
+    width: 67%;
     height: 7%;
     margin-top: 10%;
     color: white;
-    border-radius: 500px;
+    border-radius: 400px;
     border: 20px;
     cursor: pointer;
     
@@ -24,11 +24,13 @@
 
 .inputFields{
     background-color: aliceblue;
-    margin-bottom: 8%;
-    padding: 5%;
+    margin-bottom: 6%;
+    padding: 3%;
     margin-left: 25%;
     border-color: white;
     border: 20px;
+    width: 60%;
+    border-radius: 2%;
 }
 
 .forgotPwd{
@@ -52,5 +54,17 @@
 }
 
 .headerSignIn{
-    margin-left: 40%;
+    margin-left: 45%;
+    margin-bottom: 15%;
+}
+
+.FgtPwdHeader{
+    margin-left: 20%;
+
+    
+}
+.emailPwd{
+    margin-right: 100%;
+    background-color: red;
+
 }
