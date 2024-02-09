@@ -4,6 +4,7 @@ import './App.css';
 import Loginimage from './components/Loginimage';
 import SignIn from './components/SignIn';
 import ForgotPassword from './components/ForgotPassword';
+import SignUp from './components/SignUp';
 
 
 
@@ -18,13 +19,16 @@ function App() {
     setValue(false)
   }
   
+   
+  
 
   return (
     <div className="App" >
       
       <Loginimage/>
-      {value? <ForgotPassword onClick={changeValue}/>:<SignIn onClick={valuePass}/>}
-  
+      
+      {value? <ForgotPassword onClick={changeValue}/>:<SignIn  onClick={valuePass}/>}
+      
     </div>
   );
 }

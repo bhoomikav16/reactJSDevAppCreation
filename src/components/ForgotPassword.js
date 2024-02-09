@@ -11,10 +11,6 @@ export default function ForgotPassword({placeholder,type,className,onClick}){
         setInputValue(event.target.value);
 
     }
-    const[backBtnValue,setBackBtnValue]=useState(false);
-    function btnValue(){
-        setBackBtnValue(true)
-   }
 
 
     return(
