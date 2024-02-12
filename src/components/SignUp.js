@@ -30,8 +30,8 @@ export default function SignUp({type,onClick}){
   }
 
 
-  const submitForm=(values)=>{
-    console.log(values)
+  const submitForm=(event)=>{
+    event.prevent
   }
 
 
