@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Inputfield from './Inputfield';
 import Submitbtn from './Submitbtn';
 import  '../styles/button.css'
+import Greet from './Greet';
 
 export default function SignUp({type,onClick}){
     const[name,setName]=useState("");
@@ -30,9 +31,9 @@ export default function SignUp({type,onClick}){
   }
 
 
-  const submitForm=(event)=>{
-    event.prevent
-  }
+//   const submitForm=(event)=>{
+//     event.prevent
+//   }
 
 
     return(
@@ -40,7 +41,7 @@ export default function SignUp({type,onClick}){
         <h2>
             Sign Up
         </h2>
-        <form onSubmit={submitForm}  action='Sign-Up-form'>
+        <form   action='Sign-Up-form'>
             <label  for='name' >Name</label>
          <div>
         
@@ -67,6 +68,7 @@ export default function SignUp({type,onClick}){
         </div>
         <div>
         <Submitbtn onClick={onClick} className='forgotPwd'> Back to Sign In </Submitbtn>
+        <Greet name="Clark"/>
         </div>
         </form>
         </div>

@@ -18,7 +18,7 @@ function App() {
   function changeValue(){
     setValue(false)
   }
-  
+
    
   
 
@@ -28,7 +28,10 @@ function App() {
       <Loginimage/>
       
       {value? <ForgotPassword onClick={changeValue}/>:<SignIn  onClick={valuePass}/>}
-      
+       
+
+       
+       
     </div>
   );
 }
