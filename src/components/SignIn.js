@@ -5,6 +5,9 @@ import Submitbtn from './Submitbtn';
 import Inputfield from './Inputfield';
 import Paragraph from './Paragraph';
 import SignUp from './SignUp';
+import Greet from './Greet';
+import Counter from '../components/Counter'
+import EventBinding from '../components/EventBinding';
 
 
 
@@ -44,6 +47,11 @@ export default function SignIn({onClick,value}) {
        <Submitbtn className='button'>SIGN IN</Submitbtn>
        <Submitbtn onClick={onClick} className='forgotPwd' > Forgot Password? </Submitbtn>
        <Paragraph onCk={callingComponents} text="If you don't have an account?" />
+       </div>
+       <div>
+       <Greet name="Clark" heroName="Batman" />
+        <Counter/>
+        <EventBinding/>
        </div>
     
 

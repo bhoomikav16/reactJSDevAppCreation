@@ -3,6 +3,7 @@ import Inputfield from './Inputfield';
 import Submitbtn from './Submitbtn';
 import  '../styles/button.css'
 import Greet from './Greet';
+import Counter from '../components/Counter'
 
 export default function SignUp({type,onClick}){
     const[name,setName]=useState("");
@@ -68,7 +69,8 @@ export default function SignUp({type,onClick}){
         </div>
         <div>
         <Submitbtn onClick={onClick} className='forgotPwd'> Back to Sign In </Submitbtn>
-        <Greet name="Clark"/>
+        {/* <Greet name="Clark" heroName="Batman" />
+        <Counter/> */}
         </div>
         </form>
         </div>

@@ -13,6 +13,7 @@ export default function ForgotPassword({placeholder,type,className,onClick}){
     }
 
 
+
     return(
         <div style={{ alignItems : 'center', justifyItems : 'center', alignSelf : 'center'}}>
 
