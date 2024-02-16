@@ -7,7 +7,8 @@ import Paragraph from './Paragraph';
 import SignUp from './SignUp';
 import Greet from './Greet';
 import Counter from '../components/Counter'
-import EventBinding from '../components/EventBinding ';
+// import EventBinding from '../components/EventBinding ';
+import Data from '../components/Data'
 
 
 
@@ -51,7 +52,8 @@ export default function SignIn({onClick,value}) {
        <div>
        <Greet name="Clark" heroName="Batman" />
         <Counter/>
-        <EventBinding/>
+        {/* <EventBinding/> */}
+        <Data/>
        </div>
     
 
