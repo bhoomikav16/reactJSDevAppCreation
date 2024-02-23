@@ -9,6 +9,7 @@ import Greet from './Greet';
 import Counter from '../components/Counter'
 // import EventBinding from '../components/EventBinding ';
 import Data from '../components/Data'
+import Fragments from './Fragments';
 
 
 
@@ -50,10 +51,11 @@ export default function SignIn({onClick,value}) {
        <Paragraph onCk={callingComponents} text="If you don't have an account?" />
        </div>
        <div>
+        <Fragments id="inp" type="text" placeholder="Email"/>
        <Greet name="Clark" heroName="Batman" />
         <Counter/>
         {/* <EventBinding/> */}
-        <Data/>
+        {/* <Data/> */}
        </div>
     
 
