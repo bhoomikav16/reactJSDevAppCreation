@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Submitbtn from './Submitbtn';
 
 
  export default class Counter extends Component{
