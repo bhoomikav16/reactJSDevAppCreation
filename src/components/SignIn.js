@@ -5,10 +5,6 @@ import Submitbtn from './Submitbtn';
 import Inputfield from './Inputfield';
 import Paragraph from './Paragraph';
 import SignUp from './SignUp';
-import Greet from './Greet';
-import Counter from '../components/Counter'
-import Data from '../components/Data'
-import Fragments from './Fragments';
 
 
 
@@ -45,17 +41,12 @@ export default function SignIn({onClick,value}) {
       <br/>
        <Inputfield value={password} placeholder='Password' type ='password' onChange={changePasswordValue} />
        <br/>
-       <Submitbtn className='button'>SIGN IN</Submitbtn>
+       <Submitbtn onClick={onClick} className='button'>SIGN IN</Submitbtn>
        <Submitbtn onClick={onClick} className='forgotPwd' > Forgot Password? </Submitbtn>
        <Paragraph onCk={callingComponents} text="If you don't have an account?" />
        </div>
-       <div>
-        <Fragments id="inp" type="text" placeholder="Email"/>
-       <Greet name="Clark" heroName="Batman" />
-        <Counter/>
-        {/* <EventBinding/> */}
-        {/* <Data/> */}
-       </div>
+       
+      
     
 
     </div>

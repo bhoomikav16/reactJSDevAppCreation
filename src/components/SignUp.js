@@ -2,14 +2,27 @@ import React, { useState } from 'react'
 import Inputfield from './Inputfield';
 import Submitbtn from './Submitbtn';
 import  '../styles/button.css'
-import Greet from './Greet';
-import Counter from '../components/Counter'
 
 export default function SignUp({type,onClick}){
     const[name,setName]=useState("");
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
     const[cfmPassword,setCfmPassword]=useState("");
+
+    // const[user,setUser]=useState({name:null,email:null,password:"",cfmPassword:""});
+         
+    // let name , value;
+    // const handleInputs=(event)=>{
+    //   console.log(event.target.value);
+    //   name = event.target.name;
+    //   value=event.target.value;
+    //   setUser({...user,[name]:value})
+
+    // }
+    const[btn,Setbtn]=useState(false);
+    function callProfile(){
+        Setbtn(true);
+    }
 
 
 
@@ -23,13 +36,15 @@ export default function SignUp({type,onClick}){
     console.log(event.target.value);
   }
   function changePwdValue(event){
-    setPassword(event.target.value)
+    setPassword(event.target.value);
     console.log(event.target.value);
   }
   function changeCfmPwdValue(event){
     setCfmPassword(event.target.value)
     console.log(event.target.value);
+
   }
+
 
 
 //   const submitForm=(event)=>{
@@ -46,31 +61,30 @@ export default function SignUp({type,onClick}){
             <label  for='name' >Name</label>
          <div>
         
-        <Inputfield  value={name} onChange={changeName}  type='name'  placeholder='Name'  > </Inputfield>
+        <Inputfield name="name" value={name} onChange={changeName}  type=' Your name'  placeholder='Name'  > </Inputfield>
         </div>
         <br/>
         <div>
         <label for='email'  >Email</label>
-        <Inputfield type='email' placeholder='Email' value={email} onChange={changeEmailValue}    />
+        <Inputfield name="email" type='email' placeholder='Email' value={email} onChange={changeEmailValue}    />
         </div>
         <br/>
         <div>
         <label for='password' >Password</label>
-        <Inputfield   value={password} onChange={changePwdValue}   type='password' placeholder='Password'></Inputfield>
+        <Inputfield  name="password" value={password} onChange={changePwdValue}   type='password' placeholder='Password'></Inputfield>
         </div>
         <br/>
         <div>
         <label for='confirmPwd' >Confirm Password</label>
-        <Inputfield  value={cfmPassword} onChange={changeCfmPwdValue} type={type} placeholder='Confirm Password' ></Inputfield>
+        <Inputfield name="cfmPassword" value={cfmPassword} onChange={changeCfmPwdValue} type={type} placeholder='Confirm Password' ></Inputfield>
         </div>
         <br/>
         <div>
-            <Submitbtn onClick={onClick} >Submit</Submitbtn>
+            <Submitbtn onClick={onClick}  >Submit</Submitbtn>
         </div>
         <div>
         <Submitbtn onClick={onClick} className='forgotPwd'> Back to Sign In </Submitbtn>
-        {/* <Greet name="Clark" heroName="Batman" />
-        <Counter/> */}
+      
         </div>
         </form>
         </div>

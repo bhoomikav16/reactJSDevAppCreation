@@ -5,6 +5,7 @@ import Loginimage from './components/Loginimage';
 import SignIn from './components/SignIn';
 import ForgotPassword from './components/ForgotPassword';
 import SignUp from './components/SignUp';
+import Profile from './components/Profile';
 
 
 
@@ -18,16 +19,25 @@ function App() {
   function changeValue(){
     setValue(false)
   }
+  const[profile,setProfile]=useState(false);
+  function callProfile(){
+    setProfile(true);
+  }
 
    
   
 
   return (
-    <div className="App" >
-      
+    <div clas sName="App" >
+
+      {profile ? (<Profile onClick={callProfile}/>):(
+      <div>
       <Loginimage/>
       
-      {value? <ForgotPassword onClick={changeValue}/>:<SignIn  onClick={valuePass}/>}
+     { value ? (<ForgotPassword onClick={changeValue}/>):(<SignIn  onClick={valuePass}/>
+      )}
+      </div>
+      )}
        
 
        
